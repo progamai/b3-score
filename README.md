@@ -108,4 +108,48 @@ Ticker    Score    Classificação
 REC...      60     🔵 Boa
 PETR4       50     🟡 Regular
 PRIO3       25     🔴 Ruim
-BRAV3       15     🔴 Ruim
+BRAV3       15     🔴 
+
+---
+
+# 🛠️ Tecnologias utilizadas
+
+- 🐍 Python
+- 📊 Pandas
+- 📈 Plotly
+- 🎨 Streamlit
+- 🌐 Requests
+- 🔎 BeautifulSoup4
+- 🔢 NumPy
+- 🧪 Pytest
+- 🗃️ Git e GitHub
+
+---
+
+# 🏗️ Estrutura do projeto
+
+```text
+b3-score/
+│
+├── app.py
+│
+├── src/
+│   ├── coleta.py
+│   ├── tratamento.py
+│   ├── score.py
+│   ├── ranking.py
+│   ├── setores.py
+│   ├── graficos.py
+│   └── insights.py
+│
+├── notebooks/
+│   ├── 01_coleta_dados.ipynb
+│   └── 02_indicadores_fundamentalistas.ipynb
+│
+├── tests/
+│   └── teste.py
+│
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+└── README.md
