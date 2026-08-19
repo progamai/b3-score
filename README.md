@@ -119,6 +119,7 @@ PETR4 → 72/100
 VALE3 → 22/100
 
 PETR4 apresenta o maior B3 Score: 72 pontos.
+```
 
 ---
 
@@ -143,6 +144,9 @@ Ticker    Score    Classificação
 PETR4       72     🔵 Boa
 PRIO3       45     🟡 Regular
 BRAV3       25     🔴 Ruim
+```
+
+> Os valores acima são apenas um exemplo de apresentação do ranking.
 
 ---
 
@@ -183,6 +187,14 @@ Ranking
 Visualização
        ↓
 Insights
+```
+
+Os principais indicadores utilizados são:
+
+- P/L;
+- P/VP;
+- ROE;
+- Dividend Yield.
 
 ---
 
@@ -215,6 +227,49 @@ b3-score/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+```
+
+### Responsabilidade dos módulos
+
+**`app.py`**
+
+Interface principal da aplicação desenvolvida com Streamlit.
+
+**`src/coleta.py`**
+
+Responsável pela coleta dos dados financeiros.
+
+**`src/tratamento.py`**
+
+Responsável pelo tratamento e conversão dos indicadores coletados.
+
+**`src/score.py`**
+
+Contém as regras utilizadas para calcular e classificar o B3 Score.
+
+**`src/ranking.py`**
+
+Responsável pela análise das empresas e construção dos rankings.
+
+**`src/setores.py`**
+
+Responsável pela identificação dos setores e empresas relacionadas.
+
+**`src/graficos.py`**
+
+Responsável pela criação das visualizações utilizando Plotly.
+
+**`src/insights.py`**
+
+Responsável pela geração dos insights utilizados na comparação entre empresas.
+
+**`tests/teste.py`**
+
+Contém os testes utilizados para verificar partes da aplicação.
+
+**`notebooks/`**
+
+Contém os notebooks utilizados durante as etapas de coleta e análise dos dados.
 
 ---
 
@@ -240,19 +295,41 @@ b3-score/
 
 ```bash
 git clone https://github.com/progamai/b3-score.git
-
-# ⚙️ Como executar o projeto
+```
 
 ## 2. Entrar na pasta
 
 ```bash
 cd b3-score
+```
 
+## 3. Criar um ambiente virtual
+
+```bash
 python -m venv .venv
+```
 
+## 4. Ativar o ambiente virtual
+
+No Windows:
+
+```bash
 .venv\Scripts\activate
+```
 
+## 5. Instalar as dependências
+
+```bash
 pip install -r requirements.txt
+```
+
+## 6. Executar a aplicação
+
+```bash
+streamlit run app.py
+```
+
+A aplicação será disponibilizada localmente pelo Streamlit.
 
 ---
 
@@ -278,8 +355,9 @@ Ranking          Comparação
 Setor             Insights
           ↓
      Visualização
+```
 
-     ---
+---
 
 # 🧪 Testes
 
@@ -287,6 +365,9 @@ O projeto possui uma estrutura de testes localizada em:
 
 ```text
 tests/teste.py
+```
+
+Os testes fazem parte da estratégia de validação da aplicação e ajudam a verificar o comportamento das principais funcionalidades.
 
 ---
 
@@ -322,7 +403,7 @@ A aplicação permite comparar duas empresas, apresentando:
 
 A aplicação apresenta a posição da empresa pesquisada em relação às demais empresas do mesmo setor.
 
-> 📌 Screenshots da aplicação serão adicionados nesta seção.
+> 📌 Screenshots da aplicação serão adicionados nesta seção após a organização das imagens.
 
 ---
 
@@ -426,7 +507,3 @@ O B3 Score possui:
 ---
 
 ⭐ Se este projeto foi útil ou interessante, considere deixar uma estrela no repositório.
-
-
-
-
